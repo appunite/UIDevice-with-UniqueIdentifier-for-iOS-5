@@ -282,7 +282,7 @@
 		C1E8502413FFA4C300B38510 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Aurora Apps";
 			};
 			buildConfigurationList = C1E8502713FFA4C300B38510 /* Build configuration list for PBXProject "UIDeviceAddition" */;
@@ -458,6 +458,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIDeviceAddition/UIDeviceAddition-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "UIDeviceAddition/UIDeviceAddition-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,6 +473,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIDeviceAddition/UIDeviceAddition-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "UIDeviceAddition/UIDeviceAddition-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,6 +600,7 @@
 				FBD7FFA91562E6DA0065F054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBD7FFAD1562E6DA0065F054 /* Build configuration list for PBXNativeTarget "UIDeviceAdditionLibTests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +609,7 @@
 				FBD7FFAB1562E6DA0065F054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
