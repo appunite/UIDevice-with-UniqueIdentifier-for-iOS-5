@@ -482,6 +482,78 @@
 			};
 			name = Release;
 		};
+		FB775077158A5C4D003B6C74 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = AdHoc;
+		};
+		FB775078158A5C4D003B6C74 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIDeviceAddition/UIDeviceAddition-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "UIDeviceAddition/UIDeviceAddition-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		FB775079158A5C4D003B6C74 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/UIDeviceAdditionLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIDeviceAdditionLib/UIDeviceAdditionLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		FB77507A158A5C4D003B6C74 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIDeviceAdditionLib/UIDeviceAdditionLib-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "UIDeviceAdditionLibTests/UIDeviceAdditionLibTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = AdHoc;
+		};
 		FBD7FFA81562E6DA0065F054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -580,6 +652,7 @@
 			buildConfigurations = (
 				C1E8504C13FFA4C300B38510 /* Debug */,
 				C1E8504D13FFA4C300B38510 /* Release */,
+				FB775077158A5C4D003B6C74 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -589,6 +662,7 @@
 			buildConfigurations = (
 				C1E8504F13FFA4C300B38510 /* Debug */,
 				C1E8505013FFA4C300B38510 /* Release */,
+				FB775078158A5C4D003B6C74 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -598,6 +672,7 @@
 			buildConfigurations = (
 				FBD7FFA81562E6DA0065F054 /* Debug */,
 				FBD7FFA91562E6DA0065F054 /* Release */,
+				FB775079158A5C4D003B6C74 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -607,6 +682,7 @@
 			buildConfigurations = (
 				FBD7FFAA1562E6DA0065F054 /* Debug */,
 				FBD7FFAB1562E6DA0065F054 /* Release */,
+				FB77507A158A5C4D003B6C74 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
