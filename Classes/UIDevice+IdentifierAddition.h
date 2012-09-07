@@ -31,4 +31,6 @@
 
 - (NSString *) uniqueGlobalDeviceIdentifier;
 
+- (NSString *) macaddress;
+
 @end

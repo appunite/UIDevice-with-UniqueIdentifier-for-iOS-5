@@ -14,17 +14,11 @@
 #include <net/if.h>
 #include <net/if_dl.h>
 
-@interface UIDevice(Private)
-
-- (NSString *) macaddress;
-
-@end
-
 @implementation UIDevice (IdentifierAddition)
 
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
-#pragma mark Private Methods
+#pragma mark Public Methods
 
 // Return the local MAC addy
 // Courtesy of FreeBSD hackers email list
@@ -74,10 +68,6 @@
     
     return outstring;
 }
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark Public Methods
 
 - (NSString *) uniqueDeviceIdentifier{
     NSString *macaddress = [[UIDevice currentDevice] macaddress];
